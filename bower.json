@@ -1,0 +1,29 @@
+{
+  "name": "polymer-starter-kit",
+  "private": true,
+  "dependencies": {
+    "basic-calendar-day": "basic-web-components/basic-calendar-day#master",
+    "basic-calendar-month-days": "~0.6.2",
+    "basic-framed-content": "~0.6.2",
+    "date-navigator": "~1.2.0",
+    "firebase-element": "GoogleWebComponents/firebase-element#~1.0.5",
+    "iron-elements": "PolymerElements/iron-elements#1.0.0",
+    "iron-input": "PolymerElements/iron-input#~1.0.6",
+    "material-icons": "~0.1.0",
+    "neon-elements": "PolymerElements/neon-elements#1.0.0",
+    "page": "visionmedia/page.js#~1.6.3",
+    "paper-elements": "PolymerElements/paper-elements#1.0.1",
+    "paper-input": "PolymerElements/paper-input#~1.0.13",
+    "platinum-elements": "PolymerElements/platinum-elements#1.0.1",
+    "polymer": "~1.1.1"
+  },
+  "devDependencies": {
+    "web-component-tester": "*",
+    "test-fixture": "PolymerElements/test-fixture#^1.0.0"
+  },
+  "resolutions": {
+    "basic-calendar-day": "master",
+    "webcomponentsjs": "^0.7.2",
+    "font-roboto": "^0.5"
+  }
+}

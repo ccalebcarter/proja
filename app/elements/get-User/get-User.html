@@ -1,0 +1,72 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<dom-module id="get-User">
+  <style>
+    :host {
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      h1.paper-font-display1 {
+        font-size: 24px;
+      }
+    
+    }
+  </style>
+  <template>
+
+
+    <!-- Displays the value of the input test fields -->
+
+   <h1 class="paper-font-display1"><span>{{tName}}</span></h1>
+   <h1 class="paper-font-display1"><span>{{tEmail}}</span></h1>
+   <h1 class="paper-font-display1"><span>{{tZip}}</span></h1>
+
+   <h1><span class="paper-font-body2">Update text to change the name.</span>
+    <!-- Listens for "input" event and sets tName to <input>.value -->
+   <input class="paper-font-body2" label="name" value="{{tName::input}}"></h1>
+
+   <h1><span class="paper-font-body2">Please enter your email.</span>
+    <!-- Listens for "input" event and sets tEmail to <input>.value -->
+   <input class="paper-font-body2" value="{{tEmail::input}}"></h1>
+
+   <h1><span class="paper-font-body2">Please enter your zip code.</span>
+    <!-- Listens for "input" event and sets tZip to <input>.value -->
+   <input class="paper-font-body2" value="{{tZip::input}}"></h1>
+
+  </template>
+
+  <script>
+    (function() {
+      Polymer({
+        // element registration
+        is: 'get-User',
+
+        properties: {
+                // declare properties for get-User's public API
+              tName: {
+                type: String,
+                value: "Bob" 
+              },
+              tEmail: {
+                    type: String,
+                value: "joeuser@gmail.com"
+              },
+              tZip: {
+                type: String,
+                value: "98011"
+              }
+        }
+      });
+    })();
+  </script>
+
+</dom-module>
